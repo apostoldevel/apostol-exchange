@@ -1,6 +1,6 @@
 # apostol-exchange
 
-**Exchange Bot (`ex-bot`)** - Bot for buy & sale of cryptocurrency on cryptocurrency exchanges.
+**Exchange Bot (`ex-bot`)** - Bot to buy & sale of cryptocurrency on cryptocurrency exchanges.
 
 Implementation in the form of REST API Web Service, in C++.
 
@@ -11,10 +11,10 @@ The software stack consists of a compilation of source code, libraries and scrip
 Overview
 -
 1. Accepts an API request from a web client indicating amount of currency:
-    - Accesses 3 different exchanges (Binance, Poloniex, Bitfinex) using the order book and takes into account how much you need to spend on a particular exchange in order to buy a certain amount of currency.
+    - The Bot contacts 3 different exchanges (Binance, Poloniex, Bitfinex) with an order book request and calculates how much you need to spend to buy specific amount of currency on a particular exchange.
 1.  Accepts an API request from a web client indicating the exchange, quantity and trading pair:
     - Sends an API request to the exchange to execute an order, returns a response to the web client. 
-1. Writes the result to the PostgreSQL database.
+1. Writes the result to the PostgreSQL database. 
 
 Build and installation
 -
